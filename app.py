@@ -16,7 +16,7 @@ BiTS Id: 2025AC05732
 ## https://github.com/2025ac05732-hub/ML-Assignment02 GITHUB Repository
 
 # Import required libraries, functions and modesl
-!pip install streamlit
+#!pip install streamlit
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
