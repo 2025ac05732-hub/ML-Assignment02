@@ -170,14 +170,23 @@ y = df[target_variable].copy()
 # Encode categorical variables if any exist
 for col in X.columns:
     # if X[col].dtype == 'object' or str(X[col].dtype) == 'category' or X[col].dtype == 'bool':
-    if not np.issubdtype(X[col].dtype, np.number) or X[col].dtype == 'object' or X[col].dtype == 'bool':
+    # if not np.issubdtype(X[col].dtype, np.number) or X[col].dtype == 'object' or X[col].dtype == 'bool':
+    if isinstance(X[col].dtype, pd.StringDtype) or X[col].dtype == 'object' or X[col].dtype == 'bool':
+        X[col] = X[col].astype(str)
         le = LabelEncoder()
-        X[col] = le.fit_transform(X[col].astype(str))
+        # X[col] = le.fit_transform(X[col].astype(str))
+        X[col] = le.fit_transform(X[col])
+    elif not np.issubdtype(X[col].dtype, np.number):
+        X[col] = X[col].astype(str)
+        le = LabelEncoder()
+        X[col] = le.fit_transform(X[col]) 
 
-if not np.issubdtype(y.dtype, np.number) or y.dtype == 'object' or y.dtype == 'bool':
-# if y.dtype == 'object' or str(y.dtype) == 'category' or y.dtype == 'bool':
+# 1. if not np.issubdtype(y.dtype, np.number) or y.dtype == 'object' or y.dtype == 'bool':
+# 2. if y.dtype == 'object' or str(y.dtype) == 'category' or y.dtype == 'bool':
+if isinstance(y.dtype, pd.StringDtype) or y.dtype == 'object' or y.dtype == 'bool' or not np.issubdtype(y.dtype, np.number):
+    y = y.astype(str)
     le_y = LabelEncoder()
-    y = le_y.fit_transform(y.astype(str))
+    y = le_y.fit_transform(y)
 
 # Train-Test Split (Standard 70-30 split for validation)
 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42, stratify=y if len(np.unique(y)) == 2 else None)
