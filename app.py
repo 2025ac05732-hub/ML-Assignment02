@@ -49,13 +49,13 @@ from sklearn.metrics import (
 ## !pwd
 
 ## Downlaoding Online Shoppers Purchasing Intention Data from UCI ML Repository
-!pip install ucimlrepo
-from ucimlrepo import fetch_ucirepo # Import UCI Repo
+# !pip install ucimlrepo
+# from ucimlrepo import fetch_ucirepo # Import UCI Repo
 
-online_shoppers_purchasing_intention = fetch_ucirepo(id=468) # Fetch Data online shoppers purchasing intention
+# online_shoppers_purchasing_intention = fetch_ucirepo(id=468) # Fetch Data online shoppers purchasing intention
 
-X = online_shoppers_purchasing_intention.data.features
-Y = online_shoppers_purchasing_intention.data.targets
+# X = online_shoppers_purchasing_intention.data.features
+# Y = online_shoppers_purchasing_intention.data.targets
 
 # Set Streamlit Page Configuration
 st.set_page_config(
