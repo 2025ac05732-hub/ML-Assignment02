@@ -45,8 +45,8 @@ from sklearn.metrics import (
 )
 
 ## Clone git repository to Ggogle Colab
-!git  clone https://github.com/2025ac05732-hub/ML-Assignment02.git
-!pwd
+## !git  clone https://github.com/2025ac05732-hub/ML-Assignment02.git
+## !pwd
 
 ## Downlaoding Online Shoppers Purchasing Intention Data from UCI ML Repository
 !pip install ucimlrepo
@@ -306,9 +306,9 @@ st.info(
 # Commented out IPython magic to ensure Python compatibility.
 ## Pushing changes to GIT repository from Google Colab
 
-# %cd ML-Assignment02
-!git config --global user.email 2025ac05732@wilp.bits-pilani.ac.in
-!git config --global user.name 2025ac05732-hub
-!git add .
-!git commit -m "Commit message from Google Colab"
-!git push origin main
+# # %cd ML-Assignment02
+##!git config --global user.email 2025ac05732@wilp.bits-pilani.ac.in
+##!git config --global user.name 2025ac05732-hub
+##!git add .
+##!git commit -m "Commit message from Google Colab"
+##!git push origin main
