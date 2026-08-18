@@ -10,7 +10,7 @@ The objective of this assignment is to implement and evaluate multiple foundatio
 - **Minimum Feature Size**: Met (>12 feature attributes)
 - **Target Feature**: `Revenue_Target` (Binary Choice: 1 if purchase occurs, 0 otherwise)
 - Please download the datafile **(online_shoppers_intention.csv)** from my github repo to your local computer and then use upload option in the app to upload the file.
-- Please clear cache and rerun in case you encounter sample mismatch error.
+- **Please clear cache and rerun in case you encounter sample mismatch error.**
 
 ### Feature Directory Matrix
 1. **Administrative**: Number of administrative pages visited by the user.
