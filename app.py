@@ -169,11 +169,11 @@ y = df[target_variable].copy()
 
 # Encode categorical variables if any exist
 for col in X.columns:
-    if X[col].dtype == 'object' or str(X[col].dtype) == 'category':
+    if X[col].dtype == 'object' or str(X[col].dtype) == 'category' or X[col].dtype == 'bool':
         le = LabelEncoder()
         X[col] = le.fit_transform(X[col].astype(str))
 
-if y.dtype == 'object' or str(y.dtype) == 'category':
+if y.dtype == 'object' or str(y.dtype) == 'category' or y.dtype == 'bool':
     le_y = LabelEncoder()
     y = le_y.fit_transform(y.astype(str))
 
