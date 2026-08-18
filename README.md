@@ -7,8 +7,10 @@ The objective of this assignment is to implement and evaluate multiple foundatio
 ## b. Dataset Description
 - **Dataset Chosen**: Online Shoppers Purchasing Intention Dataset (UCI Repository)
 - **Minimum Instance Requirement**: Met (1,000 generated or 12,330 standard UCI instances)
-- **Minimum Feature Size**: Met (14 feature attributes)
+- **Minimum Feature Size**: Met (>12 feature attributes)
 - **Target Feature**: `Revenue_Target` (Binary Choice: 1 if purchase occurs, 0 otherwise)
+- Please download the datafile **(online_shoppers_intention.csv)** from my github repo to your local computer and then use upload option in the app to upload the file.
+- Please clear cache and rerun in case you encounter sample mismatch error.
 
 ### Feature Directory Matrix
 1. **Administrative**: Number of administrative pages visited by the user.
@@ -25,6 +27,9 @@ The objective of this assignment is to implement and evaluate multiple foundatio
 12. **Browser**: Browser type indicator index.
 13. **Region**: Geographic region index.
 14. **TrafficType**: Referral traffic channel index.
+15. ...
+16. ..
+17. .
 
 ## c. GitHub Repository Link
 - `GitHub Repository Link`: [https://github.com/2025ac05732-hub/ML-Assignment02.git]
