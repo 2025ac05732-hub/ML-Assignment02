@@ -28,17 +28,17 @@ The objective of this assignment is to implement and evaluate multiple foundatio
 
 ## c. GitHub Repository Link
 - `GitHub Repository Link`: [https://github.com/2025ac05732-hub/ML-Assignment02.git]
-- `Live Streamlit Cloud Deployment`: [Provide Your Streamlit Share Link Here]
+- `Live Streamlit Cloud Deployment`: [https://ml-assignment02-ltajz3jgthb2btlh6k6axy.streamlit.app/]
 
 ## d. Models Used & Comparison Matrix
 
 | ML Model Name | Accuracy | AUC | Precision | Recall | F1 | MCC |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **Logistic Regression** | 0.8800 | 0.9142 | 0.8261 | 0.5000 | 0.6230 | 0.5824 |
-| **Decision Tree Classifier** | 0.8667 | 0.8122 | 0.6724 | 0.6964 | 0.6842 | 0.5986 |
-| **K-Nearest Neighbor Classifier** | 0.8767 | 0.8718 | 0.7600 | 0.5089 | 0.6096 | 0.5583 |
-| **Naive Bayes Classifier** | 0.8100 | 0.8927 | 0.4947 | 0.8393 | 0.6225 | 0.5401 |
-| **Random Forest (Ensemble)** | 0.8967 | 0.9405 | 0.8400 | 0.5625 | 0.6738 | 0.6334 |
+| **Logistic Regression** | 0.8816 |  0.8716 | 0.7428 | 0.3584 | 0.4835 | 0.4619 |
+| **Decision Tree Classifier** | 0.8554 | 0.7295 | 0.5314 | 0.5472 | 0.5392 | 0.4535 |
+| **K-Nearest Neighbor Classifier** | 0.8724 | 0.7952 | 0.6553 | 0.3689 | 0.472 | 0.4276 |
+| **Naive Bayes Classifier** | 0.7805 | 0.8128 | 0.3851 | 0.7028 | 0.4975 | 0.3996 |
+| **Random Forest (Ensemble)** | 0.9002 | 0.9133 | 0.7312 | 0.5612 | 0.635 | 0.5852 |
 
 ### Performance Observations & Key Takeaways
 
